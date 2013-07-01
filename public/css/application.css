@@ -9,15 +9,19 @@ th {
 }*/
 
 
+body {
+  font-family: 'Trade Winds', cursive;
+  background-image: url("http://bit.ly/1b2RBS1");
+}
+
 .racer tr td{
   border: 2px solid white;
 }
 
 .racer_table td {
-  background-color: black;
-  height: 99px;
-  width: 99px;
-  border: 1px solid blue;
+  height: 96px;
+  width: 102px;
+  border: 2px dashed blue;
 }
 
 #player1_strip td.active {
@@ -30,10 +34,11 @@ th {
 
 h1 {
   text-align: center;
-  color: blue;
+  color: white;
 }
 
 a {
   text-decoration: none;
-  color: blue;
+  color: white;
 }
+
