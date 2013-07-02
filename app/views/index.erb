@@ -1,54 +1,17 @@
-<div class="container">
+<form class="add_players" action='/create_players' method='post'>
+  <input type="text" name="name1" value="Player 1">
+  <br>
+  <input type="text" name="name2" value="Player 2">
+  <br>
+  <input type="submit" value="Add Players">
+  <br>
+</form>
 
-  <body>
-    <h1>Welcome to JS Racer!</h1>
-
-    <table class="racer_table">
-      <tr id="player1_strip">
-        <th>Player 1</th>
-        <td class="active"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-
-      <tr id="player2_strip">
-        <th>Player 2</th>
-        <td class="active"></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-        <td></td>
-      </tr>
-    </table>
-
-    <br>
-    <h1><a href="app.html">Play Again!</a></h1>
-  </body>
-
-
-
-  </html>
-
-</div>
+<br>
+<form action="/create_game" method='get'>
+  <input type="submit" value="Play Game">
+</form>
+<br>
+<form action="/create_game" method='get'>
+  <input type="submit" value="View Old Results">
+</form>

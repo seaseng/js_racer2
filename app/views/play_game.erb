@@ -1,0 +1,63 @@
+<div class="container">
+
+  <body>
+    <h1>Welcome to JS Racer!</h1>
+
+    <table class="racer_table" data-game-id="<%=@game.id%>">
+      <tr id="player1_strip" data-player-id="<%=@player1.id%>">
+        <th><%= @user1.name %></th>
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+
+      <tr id="player2_strip" data-player-id="<%=@player2.id%>">
+        <th><%= @user2.name %></th>
+        <td class="active"></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+        <td></td>
+      </tr>
+    </table>
+
+    <br>
+    <h1><a href="/">Play Again!</a></h1>
+  </body>
+
+  </html>
+</div>
+
+
+<script>
+
+    var game_id = <%= @game.id %>;
+    var user1_id = <%= @user1.id %>;
+    var user2_id = <%= @user2.id %>;
+    var user1_name = "<%= @user1.name.to_s %>";
+    var user2_name = "<%= @user2.name.to_s %>";
+
+</script>
+
